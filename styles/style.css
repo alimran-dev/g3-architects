@@ -10,6 +10,12 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.section-title {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .description {
     color: #727272;
     font-size: 0.9rem;
@@ -24,9 +30,11 @@ body {
     border-radius: 5px;
     margin: 15px auto;
 }
-.default-img{
+
+.default-img {
     width: 100%;
 }
+
 /* header related styles here  */
 header {
     background-color: #ff900e1a;
@@ -37,12 +45,6 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-}
-
-nav h2 {
-    color: #131313;
-    font-size: 2rem;
-    font-weight: 700;
 }
 
 nav>ul {
@@ -76,60 +78,107 @@ nav li a {
 
 /* header related styles ends here  */
 /* main styles starts here  */
-main{
+main {
     width: 70%;
     margin: 20px auto;
 }
+
 /* team section related styles here  */
-.team-container{
+.team-container {
     margin: 50px auto;
     display: flex;
     align-items: center;
     gap: 3rem;
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-.team-info{
+.team-info {
     width: 60%;
 }
-.team-title{
+
+.team-title {
     font-size: 2rem;
     font-weight: 700;
 }
-.quick-list{
+
+.quick-list {
     color: #727272;
     font-weight: 500;
 }
 
-.text-features{
+.text-features {
     color: #FF900E;
     font-weight: 700;
 }
 
+/* facts section starts  */
+.facts-description{
+    margin: 20px 0px;
+}
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.card {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+/* .card>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.stats{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #424242;
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #727272;
+}
 /* responsive styles here  */
 /* small screen devices styles  */
 @media screen and (max-width:572px) {
-    header{
+    header {
         padding: 20px;
     }
+    .facts-card-container,
     .team-container,
-    nav{
+    nav {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    .team-info{
+
+    .team-info {
+        width: 100%;
+    }
+    .card{
         width: 100%;
     }
 }
 
 /* medium screen devices  */
 @media screen and (min-width:573px) and (max-width:960px) {
-    header{
+    header {
         padding: 40px;
+    }
+    main{
+        width: 80%;
     }
 }
