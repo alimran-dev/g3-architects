@@ -75,3 +75,23 @@ nav li a {
 .banner-img {
     width: 100%;
 }
+
+/* responsive styles here  */
+/* small screen devices styles  */
+@media screen and (max-width:572px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* medium screen devices  */
+@media screen and (min-width:573px) and (max-width:960px) {
+    header{
+        padding: 40px;
+    }
+}
