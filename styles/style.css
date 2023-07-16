@@ -22,9 +22,11 @@ body {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    margin: 10px;
+    margin: 15px auto;
 }
-
+.default-img{
+    width: 100%;
+}
 /* header related styles here  */
 header {
     background-color: #ff900e1a;
@@ -72,8 +74,40 @@ nav li a {
     font-weight: 700;
 }
 
-.banner-img {
-    width: 100%;
+/* header related styles ends here  */
+/* main styles starts here  */
+main{
+    width: 70%;
+    margin: 20px auto;
+}
+/* team section related styles here  */
+.team-container{
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.team-info{
+    width: 60%;
+}
+.team-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+
+.text-features{
+    color: #FF900E;
+    font-weight: 700;
 }
 
 /* responsive styles here  */
@@ -82,10 +116,14 @@ nav li a {
     header{
         padding: 20px;
     }
+    .team-container,
     nav{
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+    .team-info{
+        width: 100%;
     }
 }
 
