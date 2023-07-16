@@ -134,35 +134,56 @@ main {
     border: 1px solid #FF900E;
 }
 
-.stats{
+.stats {
     font-size: 2rem;
     font-weight: 600;
     color: #424242;
 }
-.card-title{
+
+.card-title {
     font-size: 1rem;
     font-weight: 600;
     color: #727272;
 }
+
 /* sponsor related styles here  */
-.sponsor-info{
+.sponsor-info {
     text-align: center;
     margin: 50px auto 20px;
 }
-.sponsor-img-container{
+
+.sponsor-img-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.sponsor-img-container img{
+
+.sponsor-img-container img {
     width: 100px;
 }
+
+/* main styles ends here  */
+/* footer related styles starts here  */
+footer {
+    background-color: #FFF4E7;
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px 0px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    color: #424242;
+}
+
 /* responsive styles here  */
 /* small screen devices styles  */
 @media screen and (max-width:572px) {
     header {
         padding: 20px;
     }
+
     .sponsor-img-container,
     .facts-card-container,
     .team-container,
@@ -172,14 +193,18 @@ main {
         gap: 10px;
     }
 
+    .card,
     .team-info {
         width: 100%;
     }
-    .card{
-        width: 100%;
-    }
-    .sponsor-img-container{
+
+    .sponsor-img-container {
         gap: 40px;
+    }
+
+    footer {
+        width: 100%;
+        margin-bottom: 0px;
     }
 }
 
@@ -188,10 +213,12 @@ main {
     header {
         padding: 40px;
     }
-    main{
+
+    main {
         width: 80%;
     }
-    .sponsor-img-container img{
+
+    .sponsor-img-container img {
         width: 80px;
     }
 }
