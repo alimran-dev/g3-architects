@@ -240,6 +240,10 @@ footer p {
     header {
         padding: 20px;
     }
+    banner-info,
+    main {
+        width: 85%;
+    }
 
     .features,
     .sponsor-img-container,
